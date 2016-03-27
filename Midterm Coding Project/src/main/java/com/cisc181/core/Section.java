@@ -4,40 +4,39 @@ import java.util.UUID;
 
 public class Section {
 
-	private int CouUUID;
-	private int SemUUID;
-	private static int SecUUID;
-	private int room;
+	private UUID CourseID;
+	private UUID SemesterID;
+	private UUID SectionID;
+	private int RoomID;
 	
 	public Section(int courseID, int semesterID, UUID randomUUID) {
 	
 	}
-	public void CourseId(int CouUUID){
-		this.CouUUID = CouUUID;
+	public UUID getCourseID(){
+		return this.CourseID;
 	}
-	public int CourseID(){
-		return this.CouUUID;
+	public void SetCourseID(UUID courseID){
+		this.CourseID = courseID;
 	}
-	
-	public void SetSemesterId(int SemUUID){
-		this.SemUUID = SemUUID;
+	public void SetSemesterId(UUID semesterUUID){
+		this.SemesterID = semesterUUID;
 	}
-	public int SemesterID(){
-		return this.SemUUID;
-	}
-	
-	public void SetSectionId(int SecUUID){
-		Section.SecUUID = SecUUID;
-	}
-	public static int SectionID(){
-		return SecUUID;
+	public UUID SemesterID(){
+		return this.SemesterID;
 	}
 	
-	public void RoomID(int room){
-		this.room = room;
+	public void SetSectionId(UUID sectionID){
+		this.SectionID = sectionID;
 	}
-	public int RoomID(){
-		return this.room;
+	public  UUID getSectionID(){
+		return this.SectionID;
+	}
+	
+	public void setRoomID(int roomID){
+		this.RoomID = roomID;
+	}
+	public int setRoomID(){
+		return this.RoomID;
 	}
 	
 	

@@ -1,20 +1,22 @@
 package com.cisc181.core;
 import java.util.Date;
+import java.util.UUID;
 
 
 public class Semester {
 	
-	private static int SemUUID;
+	private UUID SemesterID;
 	private Date start;
 	private Date end;
 
-	public void SetSemesterID(int SemUUID){
-		Semester.SemUUID = SemUUID;
+
+	public UUID getSemesterID() {
+		return this.SemesterID;
 	}
-	public static int SemesterID(){
-		return SemUUID;
+	public void setSemesterID(UUID semesterID) {
+		this.SemesterID = semesterID;
 	}
-	
+
 	public void SetStartDate(Date start){
 		this.start = start;
 	}
@@ -28,5 +30,7 @@ public class Semester {
 	public Date EndDate(){
 		return this.end;
 	}
-	
+	public Semester(UUID randomUUID, Date start, Date end) {
+		
+	}
 }

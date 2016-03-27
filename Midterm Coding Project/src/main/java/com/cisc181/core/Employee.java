@@ -3,7 +3,8 @@ import java.util.Date;
 
 public class Employee extends Person implements java.io.Serializable{
 
-    private String office;
+	private static final long serialVersionUID = 1L;
+	private String office;
     private double salary;
     private Date hire;
 

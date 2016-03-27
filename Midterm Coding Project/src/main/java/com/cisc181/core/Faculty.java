@@ -4,6 +4,7 @@ import java.util.Date;
 
 public class Faculty extends Employee {
 
+	private static final long serialVersionUID = 1L;
 	private String officeHours;
 	private int rank;
 
@@ -20,14 +21,15 @@ public class Faculty extends Employee {
     }
 
     public int getrank(){
-        return this.rank;
-    }    
-    
+        return this.rank; 
+    }
 	public Faculty(String FirstName, String MiddleName, String LastName,
 			Date DOB, String Address, String Phone_number, String Email,
 			String officeHours, int rank, double salary, Date hireDate) 
-	
 	{
+
+//Exception
+
 		super(FirstName, MiddleName, LastName, DOB, Address, Phone_number,
 				Email, officeHours, salary, hireDate);
 		

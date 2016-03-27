@@ -6,34 +6,36 @@ import com.cisc181.eNums.eMajor;
 
 public class Course {
 	
-	private int CouUUID;
-	private String name;
-	private int grade;
+	private int CourseUUID;
+	private String CourseName;
+	private int Grade;
 	private eMajor Major;
 	
-	public Course(UUID randomUUID, String string, int i, eMajor major) {
-		
+	public Course(UUID randomUUID, String courseName, int grade, eMajor major) {
+		//Getters and setters for attributes
 	}
-	public void SetCourseID(int CouUUID){
-		this.CouUUID = CouUUID;
+	public int getCourseID(){
+		return this.CourseUUID;
 	}
-	public int CourseID(){
-		return this.CouUUID;
-	}
-	
-	public void CourseName(String name){
-		this.name = name;
+	public void SetCourseID(int courseUUID){
+		this.CourseUUID = courseUUID;
+
 	}
 	public String CourseName(){
-		return this.name;
+		return this.CourseName;
 	}
 	
-	public void SetGradePoint(int grade){
-		this.grade = grade;
+	public void CourseName(String courseName){
+		this.CourseName = courseName;
 	}
+
 	public int GradePoint(){
-		return this.grade;
+		return this.Grade;
 	}
+	public void SetGradePoint(int grade){
+		this.Grade = grade;
+	}
+
 	public eMajor getMajor() {
 		return Major;
 	}
